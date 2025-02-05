@@ -1,0 +1,116 @@
+/* Fundo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f8f9fa;
+    background: url('../img/5072612.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Card de Perfil */
+.card {
+    background-color: rgba(20, 30, 50, 0.9);
+    color: #f8f9fa;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card p {
+    font-size: 1rem;
+    color: #adb5bd;
+}
+
+/* Redes sociais no Card */
+.card .social-section {
+    background-color: #00a8e8;
+    padding: 10px 0;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.card .social-section a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.card .social-section a:hover {
+    color: #f3f4f6;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #00a8e8;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #007bb8;
+    color: #ffffff;
+}
+
+.btn-outline-light {
+    border-color: #00a8e8;
+    color: #00a8e8;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #00a8e8;
+    color: #ffffff;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn-primary, .btn-outline-light {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

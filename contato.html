@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <title>Contato - Mauricio Durante Dall Igna</title>
+</head>
+<body>
+
+    <!-- Carregar Navbar -->
+    <div id="header-placeholder"></div>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center" data-aos="fade-up">
+                <h2 class="fw-bold mb-4">Entre em Contato</h2>
+                <p>Fique à vontade para me chamar para projetos, dúvidas ou networking!</p>
+
+                <div class="contact-info mt-4">
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> 
+                        <a href="mailto:mauriciodalligna@gmail.com">mauriciodalligna@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <strong>Telefone:</strong> 
+                        <a href="tel:+5554999247528">(54) 99924-7528</a></p>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="from_name" class="form-label">Nome:</label>
+                        <input type="text" name="from_name" id="from_name" class="form-control" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="from_email" class="form-label">Email:</label>
+                        <input type="email" name="from_email" id="from_email" class="form-control" placeholder="Seu Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensagem:</label>
+                        <textarea name="message" id="message" class="form-control" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span id="btn-text">Enviar Mensagem</span>
+                        <span id="btn-loader" class="spinner-border spinner-border-sm" style="display:none;"></span>
+                    </button>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carregar Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/contato.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/571ae05c29.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</body>
+</html>
