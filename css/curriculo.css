@@ -49,3 +49,84 @@
 .btn-primary:hover {
     background-color: #007bb8;
 }
+
+.contact-info p {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-info i {
+    color: #00a8e8;
+    width: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.contact-info strong {
+    flex-shrink: 0;
+    min-width: 80px;
+}
+
+.contact-info a {
+    color: #00a8e8;
+    text-decoration: none;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.contact-info a:hover {
+    color: #007bb8;
+    text-decoration: underline;
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+    .resume-section {
+        padding: 40px 15px;
+    }
+    
+    .resume-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .resume-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .resume-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .resume-card p {
+        font-size: 0.95rem;
+    }
+    
+    .skills-list {
+        gap: 8px;
+    }
+    
+    .skills-list span {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+    
+    /* Responsividade para a seção de contatos */
+    .contact-info p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .contact-info strong {
+        min-width: auto;
+    }
+    
+    .contact-info a {
+        word-break: break-word;
+        max-width: 100%;
+    }
+}

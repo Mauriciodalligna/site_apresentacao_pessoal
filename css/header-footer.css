@@ -108,9 +108,14 @@
    RESPONSIVIDADE DO NAVBAR E BOAS-VINDAS
 ======================== */
 @media (max-width: 768px) {
+    .navbar {
+        padding: 8px 15px;
+    }
+    
     .navbar-brand {
-        flex-direction: row; /* Ícone e texto sempre ao lado, mesmo no mobile */
+        flex-direction: row;
         justify-content: center;
+        gap: 8px;
     }
 
     .brand-text {
@@ -118,16 +123,26 @@
     }
 
     .brand-name {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .brand-profession {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         margin-top: 0;
+    }
+    
+    .navbar-brand .fas {
+        font-size: 1.3rem;
     }
 
     .nav-link {
         margin: 5px 0;
+        font-size: 0.9rem;
+    }
+    
+    .navbar-collapse {
+        padding: 10px;
+        margin-top: 10px;
     }
 
     /* Ajuste do espaçamento entre o card e o texto de boas-vindas */
@@ -136,7 +151,56 @@
     }
 
     .col-md-8 {
-        margin-top: 20px; /* Espaço maior entre o card e o texto */
+        margin-top: 20px;
+    }
+    
+    /* Footer responsivo */
+    .footer {
+        padding: 30px 15px;
+    }
+    
+    .footer h5 {
+        font-size: 1.1rem;
+    }
+    
+    .footer p {
+        font-size: 0.85rem;
+    }
+    
+    .footer-social .social-icon {
+        font-size: 1.3rem;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        gap: 6px;
+    }
+    
+    .brand-name {
+        font-size: 1.1rem;
+    }
+    
+    .brand-profession {
+        font-size: 0.75rem;
+    }
+    
+    .navbar-brand .fas {
+        font-size: 1.2rem;
+    }
+    
+    .nav-link {
+        font-size: 0.85rem;
+    }
+    
+    .footer {
+        padding: 25px 10px;
+    }
+    
+    .footer-social .social-icon {
+        font-size: 1.2rem;
+        margin: 0 8px;
     }
 }
 

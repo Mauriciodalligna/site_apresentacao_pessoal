@@ -20,61 +20,66 @@
           <p class="text-center mb-5">Explore os projetos em que trabalhei, com foco em soluções funcionais e modernas.</p>
   
           <div class="row">
-              <!-- Card de projeto 1 -->
+              <!-- Card de projeto 1 - OneBitFlix -->
               <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
                   <div class="card-project">
-                      <img src="img/proj1.jpg" alt="E-commerce App" class="card-img">
+                      <img src="img/home.png" alt="OneBitFlix - Clone Netflix" class="card-img">
                       <div class="card-content">
-                          <h3>E-commerce App</h3>
-                          <p>Plataforma de e-commerce com carrinho de compras, login e pagamentos integrados. Desenvolvido com React e Node.js.</p>
+                          <h3>OneBitFlix - Clone Netflix</h3>
+                          <p>Clone educacional de uma plataforma de vídeos estilo Netflix, desenvolvido do zero como parte dos estudos em desenvolvimento full stack. Sistema completo com autenticação, player de vídeo, painel administrativo e mais.</p>
                           <div class="tech-stack">
+                              <span>Next.js</span>
                               <span>React</span>
+                              <span>TypeScript</span>
                               <span>Node.js</span>
-                              <span>MongoDB</span>
+                              <span>PostgreSQL</span>
+                              <span>Sequelize</span>
                           </div>
                           <div class="card-buttons">
-                              <a href="https://github.com/seu-usuario/projeto-ecommerce" target="_blank" class="btn btn-outline-light">Ver Código</a>
-                              <a href="https://demo-projeto-ecommerce.com" target="_blank" class="btn btn-primary">Ver Demo</a>
+                              <a href="https://github.com/mauriciodalligna/onebitflix" target="_blank" class="btn btn-primary">Ver no GitHub</a>
                           </div>
                       </div>
                   </div>
               </div>
   
-              <!-- Card de projeto 2 -->
+              <!-- Card de projeto 2 - Truco Manager -->
               <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
                   <div class="card-project">
-                      <img src="img/projeto2.jpg" alt="Sistema de Tarefas" class="card-img">
+                      <img src="img/truco_home.png" alt="Truco Manager" class="card-img">
                       <div class="card-content">
-                          <h3>Sistema de Gestão de Tarefas</h3>
-                          <p>Aplicação web para organizar tarefas com autenticação e persistência de dados via Firebase.</p>
+                          <h3>Truco Manager</h3>
+                          <p>Sistema de gerenciamento de partidas de truco com backend Node.js/TypeScript e frontend Next.js/React. Projeto desenvolvido como trabalho final na disciplina de tópicos especiais de desenvolvimento de software.</p>
                           <div class="tech-stack">
+                              <span>Next.js</span>
                               <span>React</span>
-                              <span>Firebase</span>
-                              <span>CSS</span>
+                              <span>TypeScript</span>
+                              <span>Node.js</span>
+                              <span>TypeORM</span>
+                              <span>PostgreSQL</span>
                           </div>
                           <div class="card-buttons">
-                              <a href="https://github.com/seu-usuario/gestao-tarefas" target="_blank" class="btn btn-outline-light">Ver Código</a>
-                              <a href="https://demo-gestao-tarefas.com" target="_blank" class="btn btn-primary">Ver Demo</a>
+                              <a href="https://github.com/Mauriciodalligna/truco_manager" target="_blank" class="btn btn-primary">Ver no GitHub</a>
                           </div>
                       </div>
                   </div>
               </div>
   
-              <!-- Card de projeto 3 -->
+              <!-- Card de projeto 3 - Portfólio Pessoal -->
               <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
                   <div class="card-project">
-                      <img src="img/projeto3.jpg" alt="Jogo da Memória" class="card-img">
+                      <img src="img/site_pessoal.png" alt="Portfólio Pessoal" class="card-img">
                       <div class="card-content">
-                          <h3>Jogo da Memória</h3>
-                          <p>Jogo interativo desenvolvido em React com contagem de pontuação e cronômetro dinâmico.</p>
+                          <h3>Portfólio Pessoal</h3>
+                          <p>Site de apresentação pessoal desenvolvido com HTML, CSS e JavaScript. Interface moderna e responsiva com animações e formulário de contato funcional.</p>
                           <div class="tech-stack">
-                              <span>React</span>
+                              <span>HTML5</span>
+                              <span>CSS3</span>
                               <span>JavaScript</span>
-                              <span>CSS</span>
+                              <span>Bootstrap</span>
+                              <span>EmailJS</span>
                           </div>
                           <div class="card-buttons">
-                              <a href="https://github.com/seu-usuario/jogo-memoria" target="_blank" class="btn btn-outline-light">Ver Código</a>
-                              <a href="https://demo-jogo-memoria.com" target="_blank" class="btn btn-primary">Ver Demo</a>
+                              <a href="https://github.com/mauriciodalligna/site_apresentacao_pessoal" target="_blank" class="btn btn-primary">Ver no GitHub</a>
                           </div>
                       </div>
                   </div>
@@ -85,10 +90,18 @@
       <!-- Carregar Footer -->
       <div id="footer-placeholder"></div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="js/contato.js"></script>
+    <script src="js/header-footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/571ae05c29.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Inicialização do AOS
+        document.addEventListener("DOMContentLoaded", function() {
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+        });
+    </script>
 </body>
 </html>

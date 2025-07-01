@@ -1,17 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Inicialização do AOS
-    AOS.init({
-        duration: 1000,
-        once: true,
-    });
-
-    // Carregar Navbar e Footer dinamicamente
-    fetch("header-footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-placeholder").innerHTML = data.split("<!-- Footer -->")[0];
-            document.getElementById("footer-placeholder").innerHTML = data.split("<!-- Footer -->")[1];
-        });
 
     // Inicialização do EmailJS
     emailjs.init("20cRrQ4dAZbvLspAY");
